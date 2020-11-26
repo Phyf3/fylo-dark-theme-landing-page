@@ -11,23 +11,24 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
-      width: 1440px;
+    /*width:1440px;
+    height: 3619px; */
       color:white;
       background: hsl(217, 28%, 15%);
+      font-family: Open sans;
     }
 
-    /*#bg {
+    #bg {
       position: absolute;
       top: 600px;
       z-index: 1;
-      width:100%;
-      height: 100vh;
+    
     }
 
     .bg {
-      width: 1440px;
-      height:300px;
-    }*/
+      width: 100vw;
+      height:2000px;
+    }
 
     #content {
       position: absolute;
@@ -37,6 +38,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      font-family: Raleway;
     }
 
     nav {
@@ -47,7 +49,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       position: relative;
-      right: 5px;
+      right: 25px;
       top: 10px;
     }
 
@@ -55,9 +57,15 @@
       list-style-type: none;
     }
 
+    .head-pic{
+      margin-left: 80px;
+    }
+
     #heading {
       color: white;
       text-align: center;
+      position: relative;
+      top:70px;
     }
 
     button {
@@ -68,13 +76,25 @@
       background-color:  hsl(176, 68%, 64%);
     }
 
+    button:hover {
+            animation-name: color;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+        }
+        @keyframes color {
+            100% {
+                background-color: hsl(219, 30%, 18%);
+            }
+        }
+
     #features {
       text-align: center;
       color:white;
-      margin-top: 70px;;
+      margin-top: 150px;
       display: grid;
       grid-template-columns: auto auto;  
     }
+    
 
     .access {
       margin-left: 250px;
@@ -114,7 +134,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       position: relative;
-      top:20px
+      top:100px
     }
 
     .testimony-bg {
@@ -122,6 +142,7 @@
       width:350px;
       height: 170px;
       border-radius: 10px;
+      z-index: 2;
     }
 
     .testimony-text {
@@ -143,14 +164,68 @@
       left:70px;
     }
 
+    #register {
+      width: 700px;
+      height: 200px;
+      text-align: center;
+      background-color:  hsl(219, 30%, 18%);
+      border-radius: 10px;
+      position: absolute;
+      bottom: -20px;
+      left: 450px;
+      z-index: 5;
+    }
+
+    #register-text {
+      position: relative;
+      top: 20px;
+    }
+
+    #email {
+      width: 300px;
+      height: 30px;
+      border-radius: 20px;
+      position: relative;
+      right: 20px;
+    }
+
+    #footer {
+     background-color: hsl(216, 53%, 9%);
+      height: 300px;
+      width:1440px;
+     padding-bottom: 20px;
+     padding-top: 80px;
+      position: relative;
+      bottom: -300px;
+      left:30px;
+      z-index:1 ;
+    }
+
+    #footer-logo {
+      position: relative;
+      left: 60px;
+    }
+
+    #info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top:50px;
+    }
+
+    #icon {
+      position: relative;
+      right: 40px;
+      top:22px;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <!--<div id="bg">
+  <div id="bg">
     <img class ="bg" src="images/bg-curvy-desktop.svg">
-  </div>-->
+  </div>
 
   <div id="content">
     <header>
@@ -164,7 +239,7 @@
     </header>
     
     <section id="heading"> 
-      <img src="images/illustration-intro.png">
+      <div class="head-pic"><img  src="images/illustration-intro.png"></div>
       <h1>All your files in one secure location,<br> accessible anywhere.</h1>
   
       <p>Fylo stores all your most important files in one secure location.<br>
@@ -261,35 +336,57 @@
      </div>
      </section>
     
+      <div id="register">
+        <div id="register-text">
+          <h1>Get early access today</h1>
   
-    Get early access today
-  
-    It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-    questions, our support team would be happy to help you.
-  
-    Get Started For Free
-  
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-    dolore magna aliqua
-  
-    +1-543-123-4567
-    example@fylo.com
-  
-    About Us
-    Jobs
-    Press
-    Blog
-  
-    Contact Us
-    Terms
-    Privacy
-  
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any<br>
+          questions, our support team would be happy to help you.</p>
+        
+          <input id="email" type="email" placeholder="example@gmail.com"> <button type="submit">Get Started For Free</button>
+        </div>
+      </div>
+   
+        <section id="footer">
+          <div id="footer-logo"><img src="images/logo.svg"> </div>
+          <div id="info">
+              <div>
+                <div id="icon"> <img src="images/icon-location.svg"> </div>
+                Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et 
+                     dolore magna aliqua
+              </div><br>
+
+              <div>
+                <div id="icon"> <img src="images/icon-phone.svg"></div> +1-543-123-4567<br>
+                <diV id="icon"> <img src="images/icon-email.svg"> </diV>example@fylo.com<br>
+              </div><br>
+            
+              <div>
+                  About Us<br>
+                  Jobs<br>
+                  Press<br>
+                  Blog<br>
+              </div><br>
+              
+                <div>  
+                  Contact Us<br>
+                  Terms<br>
+                  Privacy<br>
+                </div>
+
+                <!--<div>
+                  <img src="images/"
+                </div>-->
+          </div>
+          
+            <footer>
+              <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Your Name Here</a>.
+              </p>
+            </footer>
+        </section>
+    
   </div>
   
 </body>
