@@ -12,7 +12,7 @@ body {
       }
      }
 
-    #bg {
+    .bg {
       position: absolute;
       top: 600px;
       z-index: 1;
@@ -31,7 +31,7 @@ body {
     }
     
     @media (max-width: 1024px) {
-      #content {
+      .content {
         background-image: url('images/bg-curvy-mobile.svg');
         background-size: 100% 100%;
         height: 4500px;
@@ -88,7 +88,7 @@ body {
     }
   }
   
-    #heading {
+    .heading {
       color: white;
       text-align: center;
       position: relative;
@@ -96,7 +96,7 @@ body {
     }
 
     @media (max-width: 1440px) {
-      #heading {
+      .heading {
         position: relative;
         left: 20px;
       }
@@ -121,7 +121,7 @@ body {
             }
         }
 
-    #features {
+    .features {
       text-align: center;
       color:white;
       margin-top: 150px;
@@ -130,7 +130,7 @@ body {
     }
 
     @media (max-width: 1440px) {
-      #features {
+      .features {
         width: 375px;
         display: flex;
         flex-direction: column;
@@ -186,7 +186,7 @@ body {
       }
     }
 
-    #enquiries {
+    .enquiries {
       display: flex;
       flex-direction: row;
        margin-top: 70px;
@@ -194,7 +194,7 @@ body {
     }
 
     @media (max-width: 600px) {
-      #enquiries {
+      .enquiries {
         width:375px;
         display: flex;
         flex-direction: column;
@@ -205,20 +205,20 @@ body {
 
     
   @media (max-width: 1440px) {
-    #stayproductive {
+    .stayproductive {
         position: relative;
         right: 50px;
     }
       }
 
-    #p-content {
+  .p-content {
       width: 450px;
       margin-top: 100px;
       margin-left: 80px;
     }
 
     @media (max-width: 1024px) {
-      #p-content {
+      .p-content {
         width:400px;
         position: relative;
         right: 30px;
@@ -230,7 +230,7 @@ body {
       text-decoration: underline;
     }
 
-    #testimonies {
+    .testimonies {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -239,7 +239,7 @@ body {
     }
 
     @media (max-width: 1440px) {
-      #testimonies {
+      .testimonies {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -268,7 +268,7 @@ body {
       left: 40px;
     }
 
-    #pic {
+    .pic {
       height: 30px;
       border-radius: 50%;
       position: absolute;
@@ -276,25 +276,25 @@ body {
       bottom: 5px;
     }
 
-    #profile {
+    .profile {
       position: relative;
       left:70px;
     }
 
-    #register {
+    .register {
       width: 700px;
       height: 250px;
       text-align: center;
       background-color:  hsl(219, 30%, 18%);
       border-radius: 10px;
       position: absolute;
-      bottom: -20px;
+      bottom: -1750px;
       left: 450px;
       z-index: 5;
     }
 
     @media ( max-width:1440px) {
-      #register {
+      .register {
         height:350px;
         width:420px;
         padding-top:50px;
@@ -305,7 +305,7 @@ body {
       }
     }
 
-    #register-text {
+    .register-text {
       width:400px;
      
       position: relative;
@@ -313,14 +313,14 @@ body {
       left: 150px;
     }
     @media ( max-width:1440px) {
-      #register-text {
+      .register-text {
         width:310px;
         position: relative;
         left: 50px;
       }
     }
 
-    #email {
+    .email {
       width: 300px;
       height: 30px;
       border-radius: 20px;
@@ -329,7 +329,7 @@ body {
     }
 
     @media ( max-width:1440px) {
-      #email {
+      .email {
         height:45px;
         width:300px;
         border-radius: 50px;
@@ -349,7 +349,7 @@ body {
       }
     }
 
-    #footer {
+    .footer {
      background-color: hsl(216, 53%, 9%);
       height: 300px;
       width:1440px;
@@ -362,35 +362,35 @@ body {
     }
 
     @media ( max-width:1440px) {
-      #footer {
+      .footer {
         width:500px;
         height:600px;
         position: relative;
-        bottom: -200px;
+        top: -200px;
         left:00px;
       }
     }
 
-    #footer-logo {
+    .footer-logo {
       position: relative;
       left: 60px;
     }
     @media ( max-width:1440px) {
-      #footer-logo {
+      .footer-logo {
         position: relative;
         left: 50px;
         top: 100px;
       }
     }
 
-    #info {
+    .info {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       margin-top:50px;
     }
     @media ( max-width:1440px) {
-      #info {
+      .info {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -400,7 +400,7 @@ body {
       }
     
 
-    #icon {
+    .icon {
       position: relative;
       right: 40px;
       top:22px;
