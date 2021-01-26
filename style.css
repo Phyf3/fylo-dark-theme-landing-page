@@ -6,12 +6,6 @@ body {
       font-family: Open sans;
     }
 
-    @media (max-width:375px) {
-      body {
-          width: 50vw;
-      }
-     }
-
     .bg {
       position: absolute;
       top: 600px;
@@ -30,14 +24,6 @@ body {
       left:0px;
     }
     
-    @media (max-width: 1024px) {
-      .content {
-        background-image: url('images/bg-curvy-mobile.svg');
-        background-size: 100% 100%;
-        height: 4500px;
-        
-      }
-    }
 
     header {
       display: flex;
@@ -45,14 +31,6 @@ body {
       justify-content: space-between;
       font-family: Raleway;
     }
-
-    @media (max-width: 1024px) {
-      header {
-        width: 550px;
-        display: flex;
-        
-    }    
-  }
 
 
     nav {
@@ -67,26 +45,10 @@ body {
       top: 10px;
     }
 
-    @media (max-width: 600px) {
-      nav {
-        width: 400px;
-        margin-left: 40px;
-        display: flex;
-        justify-content: space-evenly;
-    } 
-  }   
-
     li {
       list-style-type: none;
     }
 
-       
-  @media (max-width: 1440px) {
-    .head-pic {
-        position: relative;
-        right: 130px;
-    }
-  }
   
     .heading {
       color: white;
@@ -95,12 +57,6 @@ body {
       top:70px;
     }
 
-    @media (max-width: 1440px) {
-      .heading {
-        position: relative;
-        left: 20px;
-      }
-    }
 
     button {
       width:10vw;
@@ -129,63 +85,23 @@ body {
       grid-template-columns: auto auto;  
     }
 
-    @media (max-width: 1440px) {
-      .features {
-        width: 375px;
-        display: flex;
-        flex-direction: column;
-    }    
-  }
 
     .access {
       margin-left: 250px;
     }
-    @media ( max-width:1440px) {
-      .access {
-        margin-left: 100px;
-        margin-bottom: 70px;
-        position: relative;
-        right: 5px;
-    }    
-  } 
 
     .security {
       margin-right: 250px;
-    }
-    @media ( max-width:1440px) {
-      .security {
-        margin-right: 100px;
-        margin-bottom: 50px;
-        position: relative;
-        left: 100px;
-      }
     }
 
     .collaboration {
       margin-left: 250px;
     }
 
-    @media ( max-width:1440px) {
-      .collaboration {
-        margin-left: 100px;
-        margin-bottom: 50px;
-        position: relative;
-        right: 5px;
-    }    
-  } 
-
     .store {
       margin-right: 250px;
     }
-    @media ( max-width:1440px) {
-      .store {
-        margin-right: 100px;
-        margin-bottom: 50px;
-        position: relative;
-        left: 100px;
-      }
-    }
-
+    
     .enquiries {
       display: flex;
       flex-direction: row;
@@ -193,37 +109,12 @@ body {
       margin-left: 200px;
     }
 
-    @media (max-width: 600px) {
-      .enquiries {
-        width:375px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        right: 200px;
-    }
-  }    
-
     
-  @media (max-width: 1440px) {
-    .stayproductive {
-        position: relative;
-        right: 50px;
-    }
-      }
-
   .p-content {
       width: 450px;
       margin-top: 100px;
       margin-left: 80px;
     }
-
-    @media (max-width: 1024px) {
-      .p-content {
-        width:400px;
-        position: relative;
-        right: 30px;
-        }
-      }
 
     a {
       color:hsl(176, 68%, 64%);
@@ -238,16 +129,6 @@ body {
       top:100px
     }
 
-    @media (max-width: 1440px) {
-      .testimonies {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: relative;
-        left: 50px;
-    }    
-  }
-
     .testimony-bg {
       background-color: hsl(219, 30%, 18%);
       width:350px;
@@ -256,11 +137,6 @@ body {
       z-index: 2;
     }
 
-    @media ( max-width:1440px) {
-      .testimony-bg {
-        margin-bottom: 45px;
-      }
-      }
 
     .testimony-text {
       position: relative;
@@ -288,21 +164,9 @@ body {
       background-color:  hsl(219, 30%, 18%);
       border-radius: 10px;
       position: absolute;
-      bottom: -1750px;
+      bottom: -1850px;
       left: 450px;
       z-index: 5;
-    }
-
-    @media ( max-width:1440px) {
-      .register {
-        height:350px;
-        width:420px;
-        padding-top:50px;
-        position: relative;
-        left:35px;
-        top: 350px;
-        
-      }
     }
 
     .register-text {
@@ -311,13 +175,6 @@ body {
       position: relative;
       bottom:10px;
       left: 150px;
-    }
-    @media ( max-width:1440px) {
-      .register-text {
-        width:310px;
-        position: relative;
-        left: 50px;
-      }
     }
 
     .email {
@@ -328,26 +185,6 @@ body {
       right: 20px;
     }
 
-    @media ( max-width:1440px) {
-      .email {
-        height:45px;
-        width:300px;
-        border-radius: 50px;
-        position: relative;
-        top:20px;
-        right:10px;
-      }
-    }
-
-    @media ( max-width:1440px) {
-      button {
-        height:40px;
-        width:250px;
-        position: relative;
-        top:30px;
-        right:10px;
-      }
-    }
 
     .footer {
      background-color: hsl(216, 53%, 9%);
@@ -361,26 +198,10 @@ body {
       z-index:1 ;
     }
 
-    @media ( max-width:1440px) {
-      .footer {
-        width:500px;
-        height:600px;
-        position: relative;
-        top: -200px;
-        left:00px;
-      }
-    }
 
     .footer-logo {
       position: relative;
       left: 60px;
-    }
-    @media ( max-width:1440px) {
-      .footer-logo {
-        position: relative;
-        left: 50px;
-        top: 100px;
-      }
     }
 
     .info {
@@ -389,15 +210,6 @@ body {
       justify-content: space-evenly;
       margin-top:50px;
     }
-    @media ( max-width:1440px) {
-      .info {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top:90px;
-        left:70px;
-      }
-      }
     
 
     .icon {
@@ -406,9 +218,157 @@ body {
       top:22px;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
 
-    footer {
-        margin-top: 100px;
+
+    @media ( max-width:376px) {         /* MEDIA QUERIES */
+       body {
+          width: 50vw;
+      }
+
+       .content {
+        background-image: url('images/bg-curvy-mobile.svg');
+        background-size: 100% 100%;
+        height: 4500px;
+      }
+
+       header {
+        width: 550px;
+        display: flex;
+    } 
+
+    nav {
+        width: 400px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    } 
+
+
+    .head-pic {
+        position: relative;
+        right: 130px;
+    }
+
+    .heading {
+        position: relative;
+        left: 80px;
+      }
+
+    .features {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 40px;
+    }   
+    
+    .access {
+        margin-left: 100px;
+        margin-bottom: 70px;
+        position: relative;
+        right: 5px;
+    }    
+
+     .security {
+        margin-right: 100px;
+        margin-bottom: 50px;
+        position: relative;
+        left: 100px;
+      }
+
+      .collaboration {
+        margin-left: 100px;
+        margin-bottom: 50px;
+        position: relative;
+        right: 5px;
+    }    
+
+    .store {
+      margin-right: 100px;
+      margin-bottom: 50px;
+      position: relative;
+      left: 100px;
+    }
+
+    .enquiries {
+      width:375px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      right: 250px;
+    }
+    .p-content {
+      width:400px;
+      position: relative;
+      right: 30px;
+      }
+
+      .testimonies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        left: 5px;
+      }    
+
+      .testimony-bg {
+        margin-bottom: 45px;
+      }
+
+      .register {
+        height:350px;
+        width:355px;
+        padding-top:50px;
+        position: relative;
+        left:2px;
+        top: 70px;
+      }
+
+      .register-text {
+        width:310px;
+        position: relative;
+        left: 20px;
+      }
+
+      .email {
+        height:45px;
+        width:300px;
+        border-radius: 50px;
+        position: relative;
+        top:20px;
+        right:10px;
+      }
+
+      button {
+        height:40px;
+        width:250px;
+        position: relative;
+        top:30px;
+        right:10px;
+      }
+
+      .footer {
+        width:500px;
+        height:600px;
+        position: relative;
+        top: -200px;
+        left:00px;
+      }
+
+      .footer-logo {
+        position: relative;
+        left: 50px;
+        top: 100px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:90px;
+        left:70px;
+      }
+
+
+
     }
